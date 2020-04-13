@@ -7,7 +7,7 @@ module.exports = {
     node: true,
     jest: true
   },
-  extends: ["eslint:recommended", "plugin:react/recommended", "plugin:jsx-a11y/recommended"],
+  extends: ["eslint:recommended", "airbnb", "plugin:react/recommended", "plugin:jsx-a11y/recommended"],
   globals: {
     Atomics: "readonly",
     SharedArrayBuffer: "readonly"
