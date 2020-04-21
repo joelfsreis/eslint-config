@@ -1,3 +1,6 @@
+// eslint-disable-next-line import/no-extraneous-dependencies
+const prettierConfig = require('@imaginarycloud/prettier-config')
+
 module.exports = {
   env: {
     browser: true,
@@ -26,6 +29,7 @@ module.exports = {
   },
   ignorePatterns: ['node_modules/'],
   rules: {
+    'prettier/prettier': ['error', prettierConfig],
     'arrow-body-style': [2, 'as-needed'],
     'class-methods-use-this': 0,
     'import/imports-first': 0,
