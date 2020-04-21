@@ -14,15 +14,15 @@
     "eslint-config",
     "imaginarycloud"
   ],
-  "author": "Imaginary Cloud",
+  "author": "Joel Reis",
   "license": "ISC",
-  "prettier": "@imaginarycloud/prettier-config",
+  "prettier": "@joelfsreis/prettier-config",
   "dependencies": {
     "eslint": "^6.8.0",
     "prettier": "^2.0.4"
   },
   "devDependencies": {
-    "@imaginarycloud/prettier-config": "git+ssh://git@github.com/joelfsreis/prettier-config.git",
+    "@joelfsreis/prettier-config": "^1.0.0",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-config-prettier": "^6.10.1",
     "eslint-plugin-import": "^2.20.2",

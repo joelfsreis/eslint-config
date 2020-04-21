@@ -1,5 +1,5 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
-const prettierConfig = require('@imaginarycloud/prettier-config')
+const prettierConfig = require('@joelfsreis/prettier-config')
 
 module.exports = {
   env: {
