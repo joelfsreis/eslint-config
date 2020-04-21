@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
 const prettierConfig = require('@joelfsreis/prettier-config')
 
 module.exports = {
