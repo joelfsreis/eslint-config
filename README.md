@@ -2,14 +2,27 @@
 
 This configuration uses airbnb and prettier configuration plus some extra rules that we find handy for *React* applications
 
-For more documentation you can check `ESLint` and `Prettier` documentations as well the `airbnb` and `prettier` configurations for more information
+For more documentation you can check `ESLint` and `Prettier` documentations as well the `airbnb` and `prettier` configurations for more information
+
+Automatically installs one Prettier configuration to our project.
 
 ## Install
-You need to have eslint and prettier already installed as dev dependencies on your project. If you are using `create-react-app` you can skip this next step as you don't need to install them, react-scripts already takes care of that for you
+You need to have eslint and prettier already installed as dev dependencies on your project. If you are using `create-react-app` you can skip this next step as you don't need to install them, react-scripts already takes care of that for you.
 ```
 npm install --save-dev eslint prettier
 ```
-This command will install our config using the code standards from airbnb config and code style from prettier config.
+
+Install all peer dependencies of our configuration, can be listed by the command:
+```
+npm info "@joelfsreis/eslint-config@latest" peerDependencies
+```
+
+If running npm > v5 you install them by:
+```
+npx install-peerdeps --dev @joelfsreis/eslint-config
+```
+
+If npm < v5, Linux/OSX users can run:
 ```
 (
   export PKG=@joelfsreis/eslint-config;
@@ -17,7 +30,8 @@ This command will install our config using the code standards from airbnb config
 )
 ```
 
-To configure ESLinter and Prettier you can add to your `package.json`
+## Configuration
+To configure ESLinter and Prettier you can add to your `package.json`
 ```
 "eslintConfig": {
   "extends": "@joelfsreis",
@@ -25,7 +39,7 @@ To configure ESLinter and Prettier you can add to your `package.json`
 "prettier": "@joelfsreis/prettier-config"
 ```
 
-Or create a `.eslintrc` and `.prettierrc` files and add `extends: "@joelfsreis"` and `"@joelfsreis/prettier-config"` respectivally. As an example:
+Or create a `.eslintrc` and `.prettierrc` files and add `extends: "@joelfsreis"` and `"@joelfsreis/prettier-config"` respectivally. As an example:
 ```
 <!-- .eslintrc -->
 {
@@ -37,7 +51,8 @@ Or create a `.eslintrc` and `.prettierrc` files and add `extends: "@joelfsrei
 "@joelfsreis/prettier-config"
 ```
 
-- `package.json` scripts
+## Scripts
+- `package.json` scripts object
 ```
 "lint": "eslint ./",
 "lint:fix": "eslint ./ --fix",
